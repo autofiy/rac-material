@@ -8,9 +8,6 @@
 # testing
 /coverage
 
-# production
-/build
-
 # misc
 .DS_Store
 .env.local
@@ -24,4 +21,8 @@ yarn-error.log*
 
 /.idea
 .eslintcache
-/dist
+
+/dist/__example
+/src
+/public
+/test-server

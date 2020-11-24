@@ -1,23 +1,27 @@
 {
   "name": "rac-material",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "private": false,
   "dependencies": {},
   "devDependencies": {
     "@material-ui/core": "^4.11.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "rac-core": "^1.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "rac-core": "^1.1.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "typescript": "^4.1.2"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "npm run serve & react-scripts start",
+    "serve": "node ./test-server/server.js",
+    "build": "tsc --noEmit false",
     "test": "react-scripts test",
+    "deploy": "rm -rf dist && npm run build && npm publish",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

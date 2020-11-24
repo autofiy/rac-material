@@ -2,7 +2,7 @@ import {Property, SimpleCellRendererBase} from "rac-core";
 import {TableCell} from "@material-ui/core";
 import * as React from "react";
 
-export class MaterialBodyCellRenderer extends SimpleCellRendererBase {
+export class MaterialCellRenderer extends SimpleCellRendererBase {
 
     protected getCustomRender(property: Property): any {
         return this.getAutoCollection().getProps().properties?.render?.[property.name];
@@ -15,7 +15,7 @@ export class MaterialBodyCellRenderer extends SimpleCellRendererBase {
 }
 
 
-export class MaterialHeaderCellRenderer extends MaterialBodyCellRenderer {
+export class MaterialHeaderCellRenderer extends MaterialCellRenderer {
     protected getCustomRender(property: Property): any {
         return this.getAutoCollection().getProps().properties?.headerRender?.[property.name];
     }
