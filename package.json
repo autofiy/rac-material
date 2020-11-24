@@ -1,8 +1,10 @@
 {
   "name": "rac-material",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "private": false,
   "dependencies": {},
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
   "devDependencies": {
     "@material-ui/core": "^4.11.1",
     "@testing-library/jest-dom": "^5.11.4",

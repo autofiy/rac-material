@@ -26,3 +26,4 @@ yarn-error.log*
 /src
 /public
 /test-server
+/dist/Example
