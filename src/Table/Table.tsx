@@ -1,7 +1,7 @@
 import * as React from "react";
-import {CellRenderer, SimpleTable} from "rac-core";
 import {MaterialCellRenderer, MaterialHeaderCellRenderer} from "./MaterialCellRenderer";
 import {Table as MaterialTable, TableBody, TableHead, TableRow} from "@material-ui/core";
+import {CellRenderer, SimpleTable} from "@autofiy/rac-core";
 
 class Table extends SimpleTable {
     protected getBodyCellRenderer(): CellRenderer {

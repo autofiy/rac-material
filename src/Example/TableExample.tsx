@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Component} from 'react';
-import {AutoCollection} from "rac-core";
 import {Button, TableCell} from "@material-ui/core";
+import {AutoCollection} from "@autofiy/rac-core";
 
 interface State {
     enable: boolean;
@@ -24,7 +24,7 @@ class TableExample extends Component<any, State> {
                     <div>
                         <AutoCollection properties={{
                             extraProperties: [{name: 'action', title: 'Action'}],
-                            render: {
+                            renderValue: {
                                 action: (p, data) => <TableCell>
                                     <Button variant={"contained"} onClick={() => alert(JSON.stringify(data))}>
                                         DO ACTION
