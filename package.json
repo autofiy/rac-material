@@ -1,6 +1,6 @@
 {
     "name": "@autofiy/rac-material",
-    "version": "1.2.0",
+    "version": "1.2.1",
     "private": false,
     "dependencies": {
         "@autofiy/property": "^1.0.2",
