@@ -5,8 +5,9 @@ import {Property} from "@autofiy/property";
 
 export class MaterialCellRenderer extends SimpleCellRendererBase {
 
-    protected getCustomRender(property: Property): any {
-        return this.getAutoCollection().getProps().properties?.renderValue?.[property.name];
+    protected getCustomRender(property: Property, data: any, rowIndex: number): any {
+        const renderer = this.getAutoCollection().getProps().properties?.renderValue?.[property.name];
+        return renderer ? renderer(property , data , {index : rowIndex} , this.getAutoCollection()) : undefined;
     }
 
     protected renderDefault(property: Property, data: any): any {
@@ -17,8 +18,9 @@ export class MaterialCellRenderer extends SimpleCellRendererBase {
 
 
 export class MaterialHeaderCellRenderer extends MaterialCellRenderer {
-    protected getCustomRender(property: Property): any {
-        return this.getAutoCollection().getProps().properties?.renderTitle?.[property.name];
+    protected getCustomRender(property: Property, data: any, rowIndex: number): any {
+        const renderer = this.getAutoCollection().getProps().properties?.renderTitle?.[property.name];
+        return renderer ? renderer(property , this.getAutoCollection()) : undefined;
     }
 
     protected renderDefault(property: Property, data: any): any {

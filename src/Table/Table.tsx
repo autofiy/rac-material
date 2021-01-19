@@ -41,7 +41,7 @@ class Table extends SimpleTable {
             (item: any, index: number) =>
                 <TableRow key={index}>
                     {
-                        this.getProperties().map(p => this.bodyCellRenderer.render(p, item))
+                        this.getProperties().map(p => this.bodyCellRenderer.render(p, item, index))
                     }
                 </TableRow>
         );

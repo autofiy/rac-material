@@ -25,6 +25,10 @@ class TableExample extends Component<any, State> {
                         <AutoCollection properties={{
                             extraProperties: [{name: 'action', title: 'Action'}],
                             renderValue: {
+                                name: (_, {name}, {index}) => {
+                                    console.log(_, name, index);
+                                    return <TableCell>{`${index} ${name}`}</TableCell>;
+                                },
                                 action: (p, data) => <TableCell>
                                     <Button variant={"contained"} onClick={() => alert(JSON.stringify(data))}>
                                         DO ACTION
@@ -37,6 +41,7 @@ class TableExample extends Component<any, State> {
             </div>
         );
     }
+
 }
 
 export default TableExample;

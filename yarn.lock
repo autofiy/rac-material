@@ -7,18 +7,18 @@
   resolved "https://registry.yarnpkg.com/@autofiy/autofiyable/-/autofiyable-1.2.0.tgz#067273cb6ce49444904fd3ad35e210d45d9dc9c4"
   integrity sha512-gIkQF1WC0Rj9CwrWWFynj6/4sG4NYfLeAA/KROuaQVxrkgMl9sMo8A2k0HopJD5V9WzRc21tK5lMmUbYA9V4Gg==
 
-"@autofiy/property@^1.0.2":
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/@autofiy/property/-/property-1.0.2.tgz#e70a3aca1aa8dbbd12fa5a0826b56822da1a3774"
-  integrity sha512-s4WseSoXWUEXDDrsQ06Z4HU9qEUSYQrF1tkjuXn/RNkoz6HK5dsbw4+uk9nwyR4im24lVmBYgiAhOf9YSoEhow==
+"@autofiy/property@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@autofiy/property/-/property-1.1.0.tgz#c280c1a8d18a56761674b88f264f501b02bdb8ec"
+  integrity sha512-fag9nf/FVdPzK8I9rRVVD/bSWDZ1nWe/et3eB3eIrE+7t8F3d8sJFuc0B/sXTkyCybjVfHr36GiQJiWb5iIPwg==
 
-"@autofiy/rac-core@^1.2.0":
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/@autofiy/rac-core/-/rac-core-1.2.0.tgz#e92214f74d5223f2c161e55676a06d91b3ce956c"
-  integrity sha512-ab6uZaJ6uVHpdc6mHJU5E56GW5avtxwJyrQtP7daEtFda6eAvky7tIW4exlJm6uvYozC2OQDqZ9ckhITPNCj/g==
+"@autofiy/rac-core@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@autofiy/rac-core/-/rac-core-1.3.0.tgz#28c5efa3e7a191ff48cbaeef1b6f10f2dcdaa3ed"
+  integrity sha512-dR14KGhNqK+7gaWDkM2R3uFm+lbnTJY4DU2vEfZnuDMpmy/VTXvCPs01bymCiZC6JK1eIjOXmI/BA4400ZoB2g==
   dependencies:
     "@autofiy/autofiyable" "^1.2.0"
-    "@autofiy/property" "^1.0.2"
+    "@autofiy/property" "^1.1.0"
     react "^17.0.1"
 
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.10.4", "@babel/code-frame@^7.12.11", "@babel/code-frame@^7.8.3":
