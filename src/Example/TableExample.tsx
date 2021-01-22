@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {Component} from 'react';
 import {Button, TableCell} from "@material-ui/core";
-import {AutoCollection} from "@autofiy/rac-core";
+import {AutoCollection, HttpDataFetcher} from "@autofiy/rac-core";
 
 interface State {
     enable: boolean;
@@ -22,7 +22,8 @@ class TableExample extends Component<any, State> {
                 {
                     this.state.enable &&
                     <div>
-                        <AutoCollection properties={{
+                        <AutoCollection services={{fetcher : (autofiyable) => new HttpDataFetcher(autofiyable)}}
+                            properties={{
                             extraProperties: [{name: 'action', title: 'Action'}],
                             renderValue: {
                                 name: (_, {name}, {index}) => {

@@ -12,10 +12,10 @@
   resolved "https://registry.yarnpkg.com/@autofiy/property/-/property-1.1.0.tgz#c280c1a8d18a56761674b88f264f501b02bdb8ec"
   integrity sha512-fag9nf/FVdPzK8I9rRVVD/bSWDZ1nWe/et3eB3eIrE+7t8F3d8sJFuc0B/sXTkyCybjVfHr36GiQJiWb5iIPwg==
 
-"@autofiy/rac-core@^1.3.0":
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/@autofiy/rac-core/-/rac-core-1.3.0.tgz#28c5efa3e7a191ff48cbaeef1b6f10f2dcdaa3ed"
-  integrity sha512-dR14KGhNqK+7gaWDkM2R3uFm+lbnTJY4DU2vEfZnuDMpmy/VTXvCPs01bymCiZC6JK1eIjOXmI/BA4400ZoB2g==
+"@autofiy/rac-core@^1.3.2":
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/@autofiy/rac-core/-/rac-core-1.3.2.tgz#9c88723ae52c64a5bc5ba4facddb99381e335654"
+  integrity sha512-RtSqzQwZ1aMDLIiy1I5pBTo5QCOO7o1dRV1qivzfs9cE7WSlwlwKOhvgw+GbOSB9NfVfPFZcKqMEYtbUh/NUgQ==
   dependencies:
     "@autofiy/autofiyable" "^1.2.0"
     "@autofiy/property" "^1.1.0"

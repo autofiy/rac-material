@@ -10,7 +10,6 @@ export function setupRacMaterial(): void {
     AutoCollectionDefault.renderLoading = () => <ThemedLoadingComponent/>;
     AutoCollectionDefault.renderError = () => <ThemedErrorComponent/>;
     AutoCollectionDefault.renderEmpty = () => <ThemedEmptyComponent/>;
-
 }
 
 interface ThemeProps {
